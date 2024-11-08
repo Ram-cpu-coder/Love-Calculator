@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Love Calculator</h1>
+      <div class="input-section">
+        <input
+          type="text"
+          class="input"
+          required
+          placeholder="Your first name"
+        />
+        <input
+          type="text"
+          class="input"
+          required
+          placeholder="Your partner's first name"
+        />
+      </div>
+      <button type="button" class="button">Calculate</button>
+
+      <h1>Your love has the possibility of <span id="output"></span></h1>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
