@@ -39,3 +39,8 @@ input {
 input ::placeholder {
   font-size: 20px;
 }
+button {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+}
