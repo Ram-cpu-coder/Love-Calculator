@@ -42,6 +42,12 @@ const calculate = () => {
 
     console.log(resultToDisplay);
   }
+  if (
+    love.includes(user_input.value[0]) &&
+    love.includes(partner_input.value[0])
+  ) {
+    resultToDisplay += 7;
+  }
 
   display(resultToDisplay);
 };
