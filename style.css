@@ -48,11 +48,11 @@ button {
   cursor: pointer;
   font-size: 25px;
   font-family: "Love Ya Like A Sister", cursive;
-  background: rgb(247 87 87);
-  color: white;
-  border: none;
+  background: white;
+  color: black;
+  border: 0.5px solid black;
   border-radius: 20px 5px 20px 5px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out, background 0.2s ease-in-out;
   padding: 23px 0;
   display: flex;
   align-items: center;
@@ -63,6 +63,8 @@ button:active {
 }
 button:hover {
   transform: scale(1.05);
+  background: rgb(247 87 87);
+  color: white;
 }
 
 .display {
