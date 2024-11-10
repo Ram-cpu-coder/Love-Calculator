@@ -52,6 +52,10 @@ button {
   border: none;
   border-radius: 20px 5px 20px 5px;
   transition: transform 0.2s ease-in-out;
+  padding: 23px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button:active {
   background: rgb(176, 53, 53);
