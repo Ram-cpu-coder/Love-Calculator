@@ -55,9 +55,13 @@ const calculate = () => {
 
 // ========================================================
 calculate_button.addEventListener("click", () => {
-  displayElm.style.display = "block";
-  wrapper.style.display = "none";
-  calculate();
+  if (user_input.value.length < 1 || partner_input.value.length < 1) {
+    alert("Please! enter the names.");
+  } else {
+    displayElm.style.display = "block";
+    wrapper.style.display = "none";
+    calculate();
+  }
 });
 
 // ========================================================
