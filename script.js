@@ -1,7 +1,8 @@
 const user_input = document.querySelector("#user-input");
 const partner_input = document.querySelector("#partner-input");
-const input = document.querySelectorAll(".input");
-
+const output = document.querySelector("#output");
+const displayElm = document.querySelector(".display");
+const wrapper = document.querySelector(".wrapper");
 const calculate_button = document.querySelector(".button");
 const vowels = "aeiou";
 const love = "love";
@@ -54,12 +55,14 @@ const calculate = () => {
 
 // ========================================================
 calculate_button.addEventListener("click", () => {
+  displayElm.style.display = "block";
+  wrapper.style.display = "none";
   calculate();
 });
 
 // ========================================================
 const display = (str) => {
-  console.log(str);
+  output.innerText = str;
 };
 // ========================================================
 const hasVowels = (inp) => {
