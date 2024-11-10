@@ -22,6 +22,7 @@ h1 {
 .first-h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 50px;
+  text-align: center;
 }
 .input-section {
   display: flex;
